@@ -153,7 +153,7 @@ class ChartsModel{
         animationDuration: Duration(seconds: 2),
         defaultRenderer: charts.ArcRendererConfig(
           ///ArchWidth for middle space, if ArchWidth value lesser than space width will become more.
-            arcWidth: 65,
+            arcWidth: (chartWidth*0.25).floor(),
             arcRendererDecorators: [
               charts.ArcLabelDecorator(
                   insideLabelStyleSpec: getTextStyleSpec(textStyle: insideLabelTextStyle),
